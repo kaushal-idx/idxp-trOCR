@@ -2,6 +2,13 @@ import gdown
 from PIL import Image
 import os
 import matplotlib.pyplot as plt
+from glob import glob
+from enum import Enum
+
+class Coordinates(Enum):
+    FOUR = 4
+    EIGHT = 8
+
 
 def download(url: str, save_path: str):
     """
@@ -34,3 +41,9 @@ def display_image(img):
     plt.figure(figsize=(20,20))
     plt.imshow(img)
 
+def read_images_in_dir(dir_path):
+    dir_path = str(dir_path)
+    img_paths =   glob(dir_path + "/roi*.jpg")#+ \
+            # glob(dir_path + "/*.png") + \
+            # glob(dir_path + "/*.jpeg")
+    return img_paths

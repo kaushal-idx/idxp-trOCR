@@ -1,9 +1,3 @@
-"""
-Copyright (c) 2019-present NAVER Corp.
-MIT License
-"""
-
-# -*- coding: utf-8 -*-
 import torch
 import torch.nn as nn
 from .basenet.vgg_16_bn import init_weights

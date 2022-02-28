@@ -5,15 +5,14 @@ from pathlib import Path
 import numpy as np 
 from collections import OrderedDict
 from typing import Optional, Union
-import torch_utils as torch_utils
-import idxp_trocr.utils.util as file_utils
+from ..utils import torch_utils as torch_utils
+from ..utils import util as file_utils
 
 
 CRAFT_GDRIVE_URL = "https://drive.google.com/uc?id=1bupFXqT-VU6Jjeul13XP7yx2Sg5IHr4J"
 REFINENET_GDRIVE_URL = (
     "https://drive.google.com/uc?id=1xcE9qpJXp4ofINwXWVhhQIh9S8Z7cuGj"
 )
-
 
 # unwarp corodinates
 def warp_coord(Minv, pt):
@@ -51,7 +50,7 @@ def load_craftnet_model(
     weight_path = str(weight_path)
 
     # load craft net
-    from detection.craft_net import CraftNet
+    from .craft_net import CraftNet
 
     craft_net = CraftNet()  # initialize
 
@@ -95,7 +94,7 @@ def load_refinenet_model(
     weight_path = str(weight_path)
 
     # load refine net
-    from detection.refine_net import RefineNet
+    from .refine_net import RefineNet
 
     refine_net = RefineNet()  # initialize
 
@@ -120,7 +119,7 @@ def load_refinenet_model(
     refine_net.eval()
     return refine_net
 
-def get_det_boxes(textmap, linkmap, text_threshold, link_threshold, low_text):
+def _get_bbox(textmap, linkmap, text_threshold=0.7, link_threshold=0.4, low_text=0.4):
     # prepare data
     linkmap = linkmap.copy()
     textmap = textmap.copy()
@@ -207,3 +206,16 @@ def get_det_boxes(textmap, linkmap, text_threshold, link_threshold, low_text):
         # mapper.append(k)
 
     return det, labels
+
+def rescale_coordinates(polys, ratio_w=1, ratio_h=1, ratio_net=2):
+    if len(polys) > 0:
+        polys = np.array(polys)
+        for k in range(len(polys)):
+            if polys[k] is not None:
+                polys[k] *= (ratio_w * ratio_net, ratio_h * ratio_net)
+    return polys
+
+def get_det_boxes(textmap, linkmap, idx):
+    det, labels = _get_bbox(textmap, linkmap)
+    det = rescale_coordinates(det)
+    return (det, idx.item())

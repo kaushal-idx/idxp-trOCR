@@ -1,0 +1,287 @@
+[
+  {
+    "jsn": {
+      "Orientation": 0,
+      "Resolution": { "Height": 95, "Width": 378 },
+      "Blocks": [
+        {
+          "Id": "621c6fa9cefd8683344b29c5",
+          "Block_No": 0,
+          "Type": "block",
+          "Lines": [
+            {
+              "Id": "621c6fa9cefd8683344b29c6",
+              "Line_no": 0,
+              "Type": "Line",
+              "Words": [
+                {
+                  "Id": "621c6fa9cefd8683344b29c7",
+                  "Type": "Word",
+                  "Text": "VALU",
+                  "Confidence": 0.5173636674880981,
+                  "BoundingBox": {
+                    "x1": 742,
+                    "y1": 0,
+                    "x2": 1026,
+                    "y2": 0,
+                    "x3": 1026,
+                    "y3": 92,
+                    "x4": 742,
+                    "y4": 92
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "621c6fa9cefd8683344b29c8",
+          "Block_No": 1,
+          "Type": "block",
+          "Lines": [
+            {
+              "Id": "621c6fa9cefd8683344b29c9",
+              "Line_no": 1,
+              "Type": "Line",
+              "Words": [
+                {
+                  "Id": "621c6fa9cefd8683344b29ca",
+                  "Type": "Word",
+                  "Text": "EM VALUE",
+                  "Confidence": 0.5128017067909241,
+                  "BoundingBox": {
+                    "x1": 0,
+                    "y1": 67,
+                    "x2": 505,
+                    "y2": 67,
+                    "x3": 505,
+                    "y3": 169,
+                    "x4": 0,
+                    "y4": 169
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "621c6fa9cefd8683344b29cb",
+          "Block_No": 2,
+          "Type": "block",
+          "Lines": [
+            {
+              "Id": "621c6fa9cefd8683344b29cc",
+              "Line_no": 2,
+              "Type": "Line",
+              "Words": [
+                {
+                  "Id": "621c6fa9cefd8683344b29cd",
+                  "Type": "Word",
+                  "Text": "ATION",
+                  "Confidence": 0.6104872226715088,
+                  "BoundingBox": {
+                    "x1": 738,
+                    "y1": 140,
+                    "x2": 1026,
+                    "y2": 140,
+                    "x3": 1026,
+                    "y3": 234,
+                    "x4": 738,
+                    "y4": 234
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "image_path": "/home/n13452/github/idxp-trOCR/tests/fixtures/roi3.jpg"
+  },
+  {
+    "jsn": {
+      "Orientation": 0,
+      "Resolution": { "Height": 146, "Width": 853 },
+      "Blocks": [
+        {
+          "Id": "621c6fa9cefd8683344b29ce",
+          "Block_No": 0,
+          "Type": "block",
+          "Lines": [
+            {
+              "Id": "621c6fa9cefd8683344b29cf",
+              "Line_no": 0,
+              "Type": "Line",
+              "Words": [
+                {
+                  "Id": "621c6fa9cefd8683344b29d0",
+                  "Type": "Word",
+                  "Text": "VALUE $ 150,000",
+                  "Confidence": 0.7209446430206299,
+                  "BoundingBox": {
+                    "x1": 43,
+                    "y1": 79,
+                    "x2": 953,
+                    "y2": 79,
+                    "x3": 953,
+                    "y3": 271,
+                    "x4": 43,
+                    "y4": 271
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "image_path": "/home/n13452/github/idxp-trOCR/tests/fixtures/roi1.jpg"
+  },
+  {
+    "jsn": {
+      "Orientation": 0,
+      "Resolution": { "Height": 90, "Width": 889 },
+      "Blocks": [
+        {
+          "Id": "621c6fa9cefd8683344b29d1",
+          "Block_No": 0,
+          "Type": "block",
+          "Lines": [
+            {
+              "Id": "621c6fa9cefd8683344b29d2",
+              "Line_no": 0,
+              "Type": "Line",
+              "Words": [
+                {
+                  "Id": "621c6fa9cefd8683344b29d3",
+                  "Type": "Word",
+                  "Text": "1B9U120247B089041",
+                  "Confidence": 0.9430790543556213,
+                  "BoundingBox": {
+                    "x1": 12,
+                    "y1": 25,
+                    "x2": 625,
+                    "y2": 25,
+                    "x3": 625,
+                    "y3": 164,
+                    "x4": 12,
+                    "y4": 164
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "image_path": "/home/n13452/github/idxp-trOCR/tests/fixtures/roi.jpg"
+  },
+  {
+    "jsn": {
+      "Orientation": 0,
+      "Resolution": { "Height": 78, "Width": 288 },
+      "Blocks": [
+        {
+          "Id": "621c6fa9cefd8683344b29d4",
+          "Block_No": 0,
+          "Type": "block",
+          "Lines": [
+            {
+              "Id": "621c6fa9cefd8683344b29d5",
+              "Line_no": 0,
+              "Type": "Line",
+              "Words": [
+                {
+                  "Id": "621c6fa9cefd8683344b29d6",
+                  "Type": "Word",
+                  "Text": "35,000",
+                  "Confidence": 0.5575735569000244,
+                  "BoundingBox": {
+                    "x1": 257,
+                    "y1": 66,
+                    "x2": 852,
+                    "y2": 66,
+                    "x3": 852,
+                    "y3": 243,
+                    "x4": 257,
+                    "y4": 243
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "621c6fa9cefd8683344b29d7",
+          "Block_No": 1,
+          "Type": "block",
+          "Lines": [
+            {
+              "Id": "621c6fa9cefd8683344b29d8",
+              "Line_no": 1,
+              "Type": "Line",
+              "Words": [
+                {
+                  "Id": "621c6fa9cefd8683344b29d9",
+                  "Type": "Word",
+                  "Text": "$",
+                  "Confidence": 0.5030555725097656,
+                  "BoundingBox": {
+                    "x1": 130,
+                    "y1": 126,
+                    "x2": 212,
+                    "y2": 126,
+                    "x3": 212,
+                    "y3": 258,
+                    "x4": 130,
+                    "y4": 258
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "image_path": "/home/n13452/github/idxp-trOCR/tests/fixtures/roi4.jpg"
+  },
+  {
+    "jsn": {
+      "Orientation": 0,
+      "Resolution": { "Height": 108, "Width": 409 },
+      "Blocks": [
+        {
+          "Id": "621c6fa9cefd8683344b29da",
+          "Block_No": 0,
+          "Type": "block",
+          "Lines": [
+            {
+              "Id": "621c6fa9cefd8683344b29db",
+              "Line_no": 0,
+              "Type": "Line",
+              "Words": [
+                {
+                  "Id": "621c6fa9cefd8683344b29dc",
+                  "Type": "Word",
+                  "Text": "POLICY PREMIUM",
+                  "Confidence": 0.8403480052947998,
+                  "BoundingBox": {
+                    "x1": 0,
+                    "y1": 113,
+                    "x2": 913,
+                    "y2": 113,
+                    "x3": 913,
+                    "y3": 217,
+                    "x4": 0,
+                    "y4": 217
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "image_path": "/home/n13452/github/idxp-trOCR/tests/fixtures/roi2.jpg"
+  }
+]
