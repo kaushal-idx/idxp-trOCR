@@ -9,7 +9,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from craft_text_detector.models.basenet.vgg16_bn import vgg16_bn, init_weights
+from .basenet.vgg_16_bn import vgg16_bn, init_weights
 
 
 class DoubleConv(nn.Module):

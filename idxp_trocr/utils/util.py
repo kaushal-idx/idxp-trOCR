@@ -43,7 +43,7 @@ def display_image(img):
 
 def read_images_in_dir(dir_path):
     dir_path = str(dir_path)
-    img_paths =   glob(dir_path + "/roi*.jpg")#+ \
-            # glob(dir_path + "/*.png") + \
-            # glob(dir_path + "/*.jpeg")
+    img_paths =   glob(dir_path + "/*.jpg")+ \
+            glob(dir_path + "/*.png") + \
+            glob(dir_path + "/*.jpeg")
     return img_paths

@@ -13,11 +13,11 @@ from idxp_trocr.utils import read_images_in_dir, build_response
 
 # config
 
-cuda = False
+cuda = True
 config = {
     "cuda":cuda,
-    "trocr_model_weights": '/home/n13452/saved_models/trocr_printed_model',
-    "trocr_processor_weights": '/home/n13452/saved_models/trocr_printed_processor',
+    "trocr_model_weights": '../trocr_/saved_models/trocr_large_printed_model',
+    "trocr_processor_weights": '../trocr_/saved_models/trocr_large_printed',
     "det_batch_size_roi": 64,
     "num_workers":8,
     "rec_batch_size":80,
@@ -30,13 +30,15 @@ trocr_processor = load_trocr_processor(weight_path=config.get("trocr_processor_w
 
 
 # get images
-dir_path = "/home/n13452/github/idxp-trOCR/tests/fixtures"
-is_roi = True
+dir_path = "tests/full_image/"
+is_roi = False
 inp_path = dir_path
+
 
 def main():
     if os.path.isdir(inp_path):
         image_paths = read_images_in_dir(inp_path)
+        print(image_paths)
         inp_for_recognition = do_detection(craft_net, refine_net, image_paths, is_roi, config)
         rec_op_collection = do_recognition(inp_for_recognition, trocr_processor, trocr_model, config)
         response= build_response(image_paths, rec_op_collection)
@@ -45,10 +47,15 @@ def main():
         return {"error": "invalid_request, check if path passed exist or is accessible"}
 
 if __name__ == "__main__":
-    jsn = main()
+    jsn_coll = main()
     import json
-    with open("res.json","w") as f:
-        f.writelines(json.dumps(jsn))
+    import os
+    for jsn_dct in jsn_coll:
+        jsn = jsn_dct["jsn"]
+        name = os.path.split(jsn_dct["image_path"])[-1][:-3]
+        with open(f"{name}.json","w") as f:
+            print(f"{name} completed")
+            f.writelines(json.dumps(jsn, indent=4))
 
 
 # import pickle

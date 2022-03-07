@@ -1,5 +1,54 @@
-# This template is a low-dependency template. 
-# By default there is no requirements added here.
-# Add the requirements you need to this file.
-# or run `make init` to create this file automatically based on the template.
-# You can also run `make switch-to-poetry` to use the poetry package manager.
+anyio==3.5.0
+asgiref==3.5.0
+beautifulsoup4==4.10.0
+bson==0.5.10
+certifi==2021.10.8
+charset-normalizer==2.0.12
+click==8.0.4
+cycler==0.11.0
+fastapi==0.74.1
+filelock==3.6.0
+fonttools==4.29.1
+gdown==4.4.0
+h11==0.13.0
+huggingface-hub==0.4.0
+idna==3.3
+idxp-trocr==0.1.0
+importlib-metadata==4.11.2
+joblib==1.1.0
+kiwisolver==1.3.2
+matplotlib==3.5.1
+mkl-fft==1.3.1
+mkl-random==1.2.2
+mkl-service==2.4.0
+numpy @ file:///tmp/build/80754af9/numpy_and_numpy_base_1634106693478/work
+olefile @ file:///home/conda/feedstock_root/build_artifacts/olefile_1602866521163/work
+opencv-python==4.5.3.56
+packaging==21.3
+pandas==1.1.5
+Pillow @ file:///home/conda/feedstock_root/build_artifacts/pillow_1636558793805/work
+pydantic==1.9.0
+pyparsing==3.0.7
+PySocks==1.7.1
+python-dateutil==2.8.2
+pytz==2021.3
+PyYAML==6.0
+regex==2022.1.18
+requests==2.27.1
+sacremoses==0.0.47
+scipy==1.7.3
+sentencepiece==0.1.96
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+sniffio==1.2.0
+soupsieve==2.3.1
+starlette==0.17.1
+tokenizers==0.10.3
+torch==1.10.2
+torchaudio==0.10.2
+torchvision==0.11.3
+tqdm==4.63.0
+transformers==4.13.0
+typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1644850595256/work
+urllib3==1.26.8
+uvicorn==0.17.5
+zipp==3.7.0
